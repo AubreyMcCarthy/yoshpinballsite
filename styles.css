@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#glCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.logo {
+    width: 300px;
+    height: 200px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    object-fit: contain;
+
+}
+
+.button-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+.button:link, .button:visited {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.button:hover {
+    transform: scale(1.05);
+    background: white;
+}
+
+.store-link img {
+    width: 200px;
+}
